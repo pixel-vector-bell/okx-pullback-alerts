@@ -21,22 +21,22 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Pullback-in-Uptrend Alert System <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Reuses frozen pullback strategy (config 5871d9cb3032, imported from ~/crypto_momentum). Generated 2026-10-23 11:29:40Z · scan #10749 · universe 51 · BTC regime <b>DOWN/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
+<p class="sub"><span class="pulse"></span>Reuses frozen pullback strategy (config 5871d9cb3032, imported from ~/crypto_momentum). Generated 2026-10-23 11:31:14Z · scan #10750 · universe 51 · BTC regime <b>DOWN/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
-  <div class="card"><div class="n">3</div><div class="l">Watchlist</div></div>
-  <div class="card"><div class="n">0</div><div class="l">Setup Forming</div></div>
+  <div class="card"><div class="n">2</div><div class="l">Watchlist</div></div>
+  <div class="card"><div class="n">1</div><div class="l">Setup Forming</div></div>
   <div class="card"><div class="n">0</div><div class="l">Entry Confirmed</div></div>
   <div class="card"><div class="n">3</div><div class="l">Active episodes</div></div>
 </div>
 <table>
 <tr><th>time (UTC)</th><th>level</th><th>token</th><th>price</th><th>mom 3h</th><th>dip 3b</th><th>rsi7</th><th>relvol</th><th>spread bps</th>
 <th>stop -4%</th><th>tgt +4%</th><th>ret since</th><th>MFE</th><th>MAE</th><th>sent</th></tr>
-<tr><td class='t'>2026-10-23 11:10:04</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/irys-usdt' target='_blank'>IRYS</a></td><td>0.04036</td><td>+26.68%</td><td>+9.53%</td><td>84.0</td><td>2.06x</td><td>12.7</td><td>n/a</td><td>n/a</td><td class='pos'>+1.26%</td><td class='pos'>+1.26%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-23 11:02:22</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/dos-usdt' target='_blank'>DOS</a></td><td>0.24610</td><td>+6.21%</td><td>+2.76%</td><td>74.6</td><td>2.88x</td><td>12.2</td><td>n/a</td><td>n/a</td><td class='neg'>-1.46%</td><td class='pos'>+0.00%</td><td class='neg'>-1.46%</td><td>no</td></tr><tr><td class='t'>2026-10-23 08:30:07</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/pepe-usdt' target='_blank'>PEPE</a></td><td>0.000005</td><td>+3.70%</td><td>+3.00%</td><td>87.7</td><td>4.25x</td><td>2.1</td><td>n/a</td><td>n/a</td><td class='neg'>-1.68%</td><td class='pos'>+0.10%</td><td class='neg'>-5.16%</td><td>no</td></tr>
+<tr><td class='t'>2026-10-23 11:30:49</td><td><span class='lvl' style='background:#d9a441'>SETUP FORMING</span></td><td><a href='https://www.okx.com/trade-spot/dos-usdt' target='_blank'>DOS</a></td><td>0.23620</td><td>+2.65%</td><td>+0.51%</td><td>49.2</td><td>0.92x</td><td>8.4</td><td>n/a</td><td>n/a</td><td class='pos'>+0.00%</td><td class='pos'>+0.00%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-23 11:10:04</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/irys-usdt' target='_blank'>IRYS</a></td><td>0.04036</td><td>+26.68%</td><td>+9.53%</td><td>84.0</td><td>2.06x</td><td>12.7</td><td>n/a</td><td>n/a</td><td class='pos'>+2.97%</td><td class='pos'>+2.97%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-23 08:30:07</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/pepe-usdt' target='_blank'>PEPE</a></td><td>0.000005</td><td>+3.70%</td><td>+3.00%</td><td>87.7</td><td>4.25x</td><td>2.1</td><td>n/a</td><td>n/a</td><td class='pos'>+1.48%</td><td class='pos'>+1.48%</td><td class='neg'>-5.16%</td><td>no</td></tr>
 </table>
 <p class="note">Levels map onto the strategy's 6 frozen conditions (last closed 15m bar): WATCHLIST = trend gates (dollar_vol&ge;$15k, above EMA200, EMA20 rising, 12-bar mom&ge;+2%); SETUP FORMING = trend gates + the dip starting (3-bar ret&le;&minus;1.5% OR rsi7&le;50); ENTRY CONFIRMED = all 6 true = the real signal_fires() the paper bot enters on. Stop/target are the frozen &minus;4%/&plus;4% bracket. "ret since / MFE / MAE" track subsequent price after each alert. Unavailable values shown as n/a, never faked. Scanner runs on a 15m-oriented cadence; page auto-refreshes every 60s.</p>
 <script>
-var LAST=1792754980303;
+var LAST=1792755074621;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
