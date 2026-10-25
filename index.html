@@ -21,7 +21,7 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Pullback-in-Uptrend Alert System <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Reuses frozen pullback strategy (config 5871d9cb3032, imported from ~/crypto_momentum). Generated 2026-10-25 20:01:48Z · scan #13051 · universe 31 · BTC regime <b>DOWN/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
+<p class="sub"><span class="pulse"></span>Reuses frozen pullback strategy (config 5871d9cb3032, imported from ~/crypto_momentum). Generated 2026-10-25 20:03:35Z · scan #13053 · universe 31 · BTC regime <b>DOWN/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
   <div class="card"><div class="n">0</div><div class="l">Watchlist</div></div>
@@ -36,7 +36,7 @@ a{color:#5bb0ff;text-decoration:none}
 </table>
 <p class="note">Levels map onto the strategy's 6 frozen conditions (last closed 15m bar): WATCHLIST = trend gates (dollar_vol&ge;$15k, above EMA200, EMA20 rising, 12-bar mom&ge;+2%); SETUP FORMING = trend gates + the dip starting (3-bar ret&le;&minus;1.5% OR rsi7&le;50); ENTRY CONFIRMED = all 6 true = the real signal_fires() the paper bot enters on. Stop/target are the frozen &minus;4%/&plus;4% bracket. "ret since / MFE / MAE" track subsequent price after each alert. Unavailable values shown as n/a, never faked. Scanner runs on a 15m-oriented cadence; page auto-refreshes every 60s.</p>
 <script>
-var LAST=1792958508379;
+var LAST=1792958614957;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
