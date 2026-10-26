@@ -21,22 +21,22 @@ a{color:#5bb0ff;text-decoration:none}
 @keyframes p{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
 </style></head><body>
 <h1>Pullback-in-Uptrend Alert System <span style="color:#8a97a5;font-size:12px">· alerts only · no trading</span></h1>
-<p class="sub"><span class="pulse"></span>Reuses frozen pullback strategy (config 5871d9cb3032, imported from ~/crypto_momentum). Generated 2026-10-26 10:42:22Z · scan #13670 · universe 40 · BTC regime <b>UP/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
+<p class="sub"><span class="pulse"></span>Reuses frozen pullback strategy (config 5871d9cb3032, imported from ~/crypto_momentum). Generated 2026-10-26 10:44:36Z · scan #13671 · universe 39 · BTC regime <b>UP/NORMAL</b> · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">lab</a></p>
 <div class="cards">
   <div class="card timer"><div class="n" id="since">—</div><div class="l">Last scanned</div></div>
-  <div class="card"><div class="n">3</div><div class="l">Watchlist</div></div>
+  <div class="card"><div class="n">2</div><div class="l">Watchlist</div></div>
   <div class="card"><div class="n">0</div><div class="l">Setup Forming</div></div>
   <div class="card"><div class="n">0</div><div class="l">Entry Confirmed</div></div>
-  <div class="card"><div class="n">3</div><div class="l">Active episodes</div></div>
+  <div class="card"><div class="n">2</div><div class="l">Active episodes</div></div>
 </div>
 <table>
 <tr><th>time (UTC)</th><th>level</th><th>token</th><th>price</th><th>mom 3h</th><th>dip 3b</th><th>rsi7</th><th>relvol</th><th>spread bps</th>
 <th>stop -4%</th><th>tgt +4%</th><th>ret since</th><th>MFE</th><th>MAE</th><th>sent</th></tr>
-<tr><td class='t'>2026-10-26 10:34:18</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/dood-usdt' target='_blank'>DOOD</a></td><td>0.002468</td><td>+30.65%</td><td>+7.59%</td><td>68.5</td><td>0.69x</td><td>24.8</td><td>n/a</td><td>n/a</td><td class='pos'>+0.00%</td><td class='pos'>+0.00%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-26 10:30:08</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/pons-usdt' target='_blank'>PONS</a></td><td>0.23930</td><td>+2.00%</td><td>-0.21%</td><td>53.2</td><td>1.37x</td><td>8.3</td><td>n/a</td><td>n/a</td><td class='pos'>+0.00%</td><td class='pos'>+0.00%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-26 09:32:00</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/zec-usdt' target='_blank'>ZEC</a></td><td>1,229.28</td><td>+2.22%</td><td>+0.32%</td><td>71.2</td><td>0.97x</td><td>1.6</td><td>n/a</td><td>n/a</td><td class='pos'>+0.24%</td><td class='pos'>+0.47%</td><td class='neg'>+0.00%</td><td>no</td></tr>
+<tr><td class='t'>2026-10-26 10:30:08</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/pons-usdt' target='_blank'>PONS</a></td><td>0.23930</td><td>+2.00%</td><td>-0.21%</td><td>53.2</td><td>1.37x</td><td>8.3</td><td>n/a</td><td>n/a</td><td class='pos'>+0.00%</td><td class='pos'>+0.00%</td><td class='neg'>+0.00%</td><td>no</td></tr><tr><td class='t'>2026-10-26 09:32:00</td><td><span class='lvl' style='background:#6b7a8f'>WATCHLIST</span></td><td><a href='https://www.okx.com/trade-spot/zec-usdt' target='_blank'>ZEC</a></td><td>1,229.28</td><td>+2.22%</td><td>+0.32%</td><td>71.2</td><td>0.97x</td><td>1.6</td><td>n/a</td><td>n/a</td><td class='pos'>+0.24%</td><td class='pos'>+0.47%</td><td class='neg'>+0.00%</td><td>no</td></tr>
 </table>
 <p class="note">Levels map onto the strategy's 6 frozen conditions (last closed 15m bar): WATCHLIST = trend gates (dollar_vol&ge;$15k, above EMA200, EMA20 rising, 12-bar mom&ge;+2%); SETUP FORMING = trend gates + the dip starting (3-bar ret&le;&minus;1.5% OR rsi7&le;50); ENTRY CONFIRMED = all 6 true = the real signal_fires() the paper bot enters on. Stop/target are the frozen &minus;4%/&plus;4% bracket. "ret since / MFE / MAE" track subsequent price after each alert. Unavailable values shown as n/a, never faked. Scanner runs on a 15m-oriented cadence; page auto-refreshes every 60s.</p>
 <script>
-var LAST=1793011342397;
+var LAST=1793011475969;
 function tick(){
   var el=document.getElementById('since');
   if(!LAST){el.textContent='—';return;}
